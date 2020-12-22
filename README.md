@@ -15,6 +15,7 @@ We select well-known collections in the context of Hate Speech Detection, coming
 - 2_Dataset_Hate.ipynb resulting in dataset_Hate.csv for the categories Ethnicity, nationality and religion
 - 3_Dataset_Disability.ipynb resulting in dataset_Disability.csv for the category Disability 
 In addition, one csv foreach individual dataset is created, containing only the first 1000 records (these will be utilized for specific tests)
+Please note that in this public repository, we report only the Jupyter Notebooks by which the various datasets were created (we don't upload the csvs for the strict licences for using the data and privacy related issues). 
 
 #### 2) Suites, folder
 We developed 3 suites, each having different capabilities tested: each suite is saved in the folder Pkl (with the extension .pkl) and in the folder Txt (with the extension .txt). In Txt there is in addition tests_n500.txt, containing the tests for the original suite released in the package for Sentiment by the authors (Ribeiro et al., 2020). 
