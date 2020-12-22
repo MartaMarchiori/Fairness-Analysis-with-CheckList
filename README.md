@@ -1,5 +1,9 @@
 # Explainability and Fairness analysis for abusive language detection systems with CheckList
-## Evaluation of NLP models’ language understanding
+
+References: 
+>[Beyond Accuracy: Behavioral Testing of NLP models with CheckList](http://homes.cs.washington.edu/~marcotcr/acl20_checklist.pdf)  
+> Marco Tulio Ribeiro, Tongshuang Wu, Carlos Guestrin, Sameer Singh
+> Association for Computational Linguistics (ACL), 2020
 
 This folder contains the project carried out during the internship at FBK, concerning the application of the tool CheckList (Ribeiro et al., 2020) in order to evaluate systems of Hate Speech detection, using representative datasets for this task, with a particular focus on fairness.  
 
