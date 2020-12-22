@@ -23,18 +23,20 @@ Describing the results and the analyses
 #### 4) Slide_Marchiori_CheckList, presentation 
 Summarizing the project 
 
-### IMPORTANT, TO RUN THE SUITES ON YOUR OWN MODEL AND REPLICATE THE RESULTS:
+## TO RUN THE SUITES ON YOUR OWN MODEL AND REPLICATE THE RESULTS:
 Compute the predictions for the txt file of your choice (in the Txt folder), saving them in a file where each line has 4 numbers: the prediction (0 for negative, 1 for neutral, 2 for positive) and the prediction probabilities for (negative, neutral, positive).
 Then, in the Tests' Executions notebook, update the pred_path with this file and run the suite associated with the txt file for which you computed the predictions.
 
-##### EXAMPLE: 
-suite_path = '*insert the path of the suite chosen in pkl extension*'
+#### EXAMPLE: 
+```suite_path = '*insert the path of the suite chosen in pkl extension*'
+
 suite = TestSuite.from_file(suite_path)
 
 pred_path = '*insert the path to the file where you saved the predictions for the txt file associated with the suite chosen*'
 
 suite.run_from_file(pred_path, overwrite=True)
-suite.summary()
 
+suite.summary()
+```
 
 
