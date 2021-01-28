@@ -1,4 +1,4 @@
-# Explainability and Fairness analysis for abusive language detection systems with CheckList
+# Fairness analysis for abusive language detection systems with CheckList
 
 Reference: 
 >[Beyond Accuracy: Behavioral Testing of NLP models with CheckList](http://homes.cs.washington.edu/~marcotcr/acl20_checklist.pdf)  
