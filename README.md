@@ -10,40 +10,45 @@ Reference:
 This folder contains the project carried out during the internship at FBK, concerning the application of the tool CheckList (Ribeiro et al., 2020) in order to evaluate systems of Hate Speech detection, using representative datasets for this task, with a particular focus on fairness.  
 
 #### 1) Evaluation_Datasets, folder 
-We select well-known collections in the context of Hate Speech Detection, coming from different tasks but all in English and all related to social-media context (mostly from Twitter): the data are divided in three categories, dealing with bias towards different targets. For each of the category, one dataset is created (from merging existing ones) through these Jupiter notebooks:
-- 1_Dataset_AMI.ipynb resulting in dataset_AMI.csv for the categories Misogyny, gender, sexual orientation
-- 2_Dataset_Hate.ipynb resulting in dataset_Hate.csv for the categories Ethnicity, nationality and religion
-- 3_Dataset_Disability.ipynb resulting in dataset_Disability.csv for the category Disability 
+These synthetic datasets concerns the Hate Speech Detection task. The data are in English and are divided in three categories, dealing with bias towards different targets. For each of the category, one dataset is created through the Jupiter notebook called "1_NLP Tests with CheckList + Creating Synthetic Dataset.ipynb".
+- sexism.csv for misogyny, gender, sexual orientation
+- racism.csv for ethnicity, nationality and religion
+- ableism.csv for disability and old people 
+- synthetic_dataset.csv contains them all 
 
-In addition, one csv foreach individual dataset is created, containing only the first 1000 records (these will be utilized for specific tests)
-
-Please note that in this public repository, we report only the Jupyter Notebooks by which the various datasets were created (we don't upload the csvs for the strict licences for using the data and privacy related issues). 
+As these data have been synthetically created with CheckList, they are freely usable. 
+The labels refers to the task of Hate-Speech Detection, i.e.
+- 0 for non-hateful content 
+- 1 for hateful content
 
 #### 2) Suites, folder
-We developed 3 suites, each having different capabilities tested: each suite is saved in the folder Pkl (with the extension .pkl) and in the folder Txt (with the extension .txt). In Txt there is in addition tests_n500.txt, containing the tests for the original suite released in the package for Sentiment by the authors (Ribeiro et al., 2020). 
+We developed one suite having different capabilities tested: the suite is saved with the extension .pkl and with the extension .txt. 
+The suite is created through the Jupiter notebook "1_NLP Tests with CheckList + Creating Synthetic Dataset.ipynb".
+The other notebook, "2_Tests_Executions.ipynb", reports the code to run the suite, where we can also explore the results (Important: The visual summary is implemented by the authors as ipywidgets and don't work on Colab or JupyterLab; in Jupyter notebooks instead is available and working - You can see an example in the image Visual Summary).
+The output will be:
+1. results_suite_NLP_Tests.csv summarizing the stats obtained through the tests;
+2. misclassified_records.csv containing the wrong labeled records, in case you want to explore them further or conduct additional training on them. 
 
-The suites are created through these Jupiter notebooks:
-- 1_AMI.ipynb => Misogyny Detection
-- 2_Fairness_HateSpeech.ipynb => Fairness with respect to Hate Speech targets
-- 3_New_Capabilities.ipynb => New capabilities 
-- 4_Tests_Executions.ipynb => The suites are runned in this final notebook, where we can explore the results (Important: The visual summary is implemented by the authors as ipywidgets and don't work on Colab or JupyterLab; in Jupyter notebooks instead is available and working). Running this notebook will create also csv files containing the results in tabular format. 
+#### 3) Prediction file example, folder
 
-#### 3) Report_Marchiori_CheckList, document 
+
+#### 4) Report_Marchiori_CheckList, document 
 Describing the results and the analyses 
 
-#### 4) Slide_Marchiori_CheckList, presentation 
+#### 5) Slide_Marchiori_CheckList, presentation 
 Summarizing the project 
 
-## TO RUN THE SUITES ON YOUR OWN MODEL AND REPLICATE THE RESULTS:
-Compute the predictions for the txt file of your choice (in the Txt folder), saving them in a file where each line has 4 numbers: the prediction (0 for negative, 1 for neutral, 2 for positive) and the prediction probabilities for (negative, neutral, positive).
-Then, in the Tests' Executions notebook, update the pred_path with this file and run the suite associated with the txt file for which you computed the predictions.
+## TO RUN THE SUITE ON YOUR OWN MODEL AND REPLICATE THE RESULTS:
+Compute the predictions for NLP_Tests.txt file, saving them in a file where each line has 4 numbers: the prediction (0 for hateful, 1 for neutral, 2 for non-hateful) and the prediction probabilities for (negative, neutral, positive). Since the task of Hate-Speech Detection doesn't compute the neutral label, you can put in the neutral probability always 0 (the tests created do not include the neutral label, for the same reason).
+Then, in the Tests' Executions notebook, update the pred_path with this file and run all.
+Take a look at the folder "Prediction file example" where you can find the notebook "Using_BERT_as_Hate_Speech_Classifier.ipynb", that produce the output ("output_NLP_Tests") in the format needed.  
 
 #### EXAMPLE: 
-```suite_path = '*insert the path of the suite chosen in pkl extension*'
+```suite_path = '*insert the path of the suite NLP_Tests.pkl*'
 
 suite = TestSuite.from_file(suite_path)
 
-pred_path = '*insert the path to the file where you saved the predictions for the txt file associated with the suite chosen*'
+pred_path = '*insert the path to the file where you saved the predictions for the txt file associated with the suite*'
 
 suite.run_from_file(pred_path, overwrite=True)
 
