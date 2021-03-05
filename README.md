@@ -9,7 +9,7 @@ Reference:
 
 This folder contains the project carried out during the internship at FBK, concerning the application of the tool CheckList (Ribeiro et al., 2020) in order to evaluate systems of Hate Speech detection, using representative datasets for this task, with a particular focus on fairness.  
 
-#### 1) Evaluation_Datasets, folder 
+### 1) Evaluation_Datasets, folder 
 These synthetic datasets concerns the Hate Speech Detection task. The data are in English and are divided in three categories, dealing with bias towards different targets. For each of the category, one dataset is created through the Jupiter notebook called "1_NLP Tests with CheckList + Creating Synthetic Dataset.ipynb".
 - sexism.csv for misogyny, gender, sexual orientation
 - racism.csv for ethnicity, nationality and religion
@@ -21,7 +21,7 @@ The labels refers to the task of Hate-Speech Detection, i.e.
 - 0 for non-hateful content 
 - 1 for hateful content
 
-#### 2) Suite, folder
+### 2) Suite, folder
 We developed one suite having different capabilities tested: the suite is saved with the extension .pkl and with the extension .txt. 
 The suite is created through the Jupiter notebook "1_NLP Tests with CheckList + Creating Synthetic Dataset.ipynb": **the core of this work partially relies on the examples and the tutorials released by CheckList authors for the task of Sentiment Analysis**. New capabilities -with respect to the ones in the released- have been added and the lexicons and templates have been expanded and declined especially with a focus on unintended model biases with respect to sexism, racism and ableism. 
 
@@ -31,13 +31,13 @@ The output will be:
 1. results_suite_NLP_Tests.csv summarizing the stats obtained through the tests;
 2. misclassified_records.csv containing the wrong labeled records, in case you want to explore them further or conduct additional training on them. 
 
-#### 3) Prediction file example, folder
+### 3) Prediction file example, folder
 
 
-#### 4) Report_Marchiori_CheckList, document 
+### 4) Report_Marchiori_CheckList, document 
 Describing the results and the analyses 
 
-#### 5) Slide_Marchiori_CheckList, presentation 
+### 5) Slide_Marchiori_CheckList, presentation 
 Summarizing the project 
 
 ## TO RUN THE SUITE ON YOUR OWN MODEL AND REPLICATE THE RESULTS:
