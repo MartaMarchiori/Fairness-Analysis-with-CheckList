@@ -23,7 +23,7 @@ The labels refers to the task of Hate-Speech Detection, i.e.
 
 #### 2) Suite, folder
 We developed one suite having different capabilities tested: the suite is saved with the extension .pkl and with the extension .txt. 
-The suite is created through the Jupiter notebook "1_NLP Tests with CheckList + Creating Synthetic Dataset.ipynb": **the core of this work partially relies on the examples and the tutorials released by CheckList authors for the task of Sentiment Analysis**. New capabilities -with respect to the ones in the released- have been added and the lexicons and templates have been expanded and declined especially for the context of misogyny detection.   
+The suite is created through the Jupiter notebook "1_NLP Tests with CheckList + Creating Synthetic Dataset.ipynb": **the core of this work partially relies on the examples and the tutorials released by CheckList authors for the task of Sentiment Analysis**. New capabilities -with respect to the ones in the released- have been added and the lexicons and templates have been expanded and declined especially with a focus on unintended model biases with respect to sexism, racism and ableism. 
 The other notebook, "2_Tests_Executions.ipynb", reports the code to run the suite, where we can also explore the results (Important: The visual summary is implemented by the authors as ipywidgets and don't work on Colab or JupyterLab; in Jupyter notebooks instead is available and working - You can see an example in the image Visual Summary).
 The output will be:
 1. results_suite_NLP_Tests.csv summarizing the stats obtained through the tests;
