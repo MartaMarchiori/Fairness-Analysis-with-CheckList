@@ -24,7 +24,9 @@ The labels refers to the task of Hate-Speech Detection, i.e.
 #### 2) Suite, folder
 We developed one suite having different capabilities tested: the suite is saved with the extension .pkl and with the extension .txt. 
 The suite is created through the Jupiter notebook "1_NLP Tests with CheckList + Creating Synthetic Dataset.ipynb": **the core of this work partially relies on the examples and the tutorials released by CheckList authors for the task of Sentiment Analysis**. New capabilities -with respect to the ones in the released- have been added and the lexicons and templates have been expanded and declined especially with a focus on unintended model biases with respect to sexism, racism and ableism. 
+
 The other notebook, "2_Tests_Executions.ipynb", reports the code to run the suite, where we can also explore the results (Important: The visual summary is implemented by the authors as ipywidgets and don't work on Colab or JupyterLab; in Jupyter notebooks instead is available and working - You can see an example in the image Visual Summary).
+
 The output will be:
 1. results_suite_NLP_Tests.csv summarizing the stats obtained through the tests;
 2. misclassified_records.csv containing the wrong labeled records, in case you want to explore them further or conduct additional training on them. 
@@ -40,7 +42,9 @@ Summarizing the project
 
 ## TO RUN THE SUITE ON YOUR OWN MODEL AND REPLICATE THE RESULTS:
 Compute the predictions for NLP_Tests.txt file, saving them in a file where each line has 4 numbers: the prediction (0 for hateful, 1 for neutral, 2 for non-hateful) and the prediction probabilities for (negative, neutral, positive). Since the task of Hate-Speech Detection doesn't compute the neutral label, you can put in the neutral probability always 0 (the tests created do not include the neutral label, for the same reason).
+
 Then, in the Tests' Executions notebook, update the pred_path with this file and run all.
+
 Take a look at the folder "Prediction file example" where you can find the notebook "Using_BERT_as_Hate_Speech_Classifier.ipynb", that produce the output ("output_NLP_Tests") in the format needed.  
 
 #### EXAMPLE: 
