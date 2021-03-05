@@ -14,16 +14,16 @@ These synthetic datasets concerns the Hate Speech Detection task. The data are i
 - sexism.csv for misogyny, gender, sexual orientation
 - racism.csv for ethnicity, nationality and religion
 - ableism.csv for disability and old people 
-- synthetic_dataset.csv contains them all 
+- all_synthetic_dataset.csv contains them all 
 
 As these data have been synthetically created with CheckList, they are freely usable. 
 The labels refers to the task of Hate-Speech Detection, i.e.
 - 0 for non-hateful content 
 - 1 for hateful content
 
-#### 2) Suites, folder
+#### 2) Suite, folder
 We developed one suite having different capabilities tested: the suite is saved with the extension .pkl and with the extension .txt. 
-The suite is created through the Jupiter notebook "1_NLP Tests with CheckList + Creating Synthetic Dataset.ipynb".
+The suite is created through the Jupiter notebook "1_NLP Tests with CheckList + Creating Synthetic Dataset.ipynb": **the core of this work partially relies on the examples and the tutorials released by CheckList authors for the task of Sentiment Analysis**. New capabilities -with respect to the ones in the released- have been added and the lexicons and templates have been expanded and declined especially for the context of misogyny detection.   
 The other notebook, "2_Tests_Executions.ipynb", reports the code to run the suite, where we can also explore the results (Important: The visual summary is implemented by the authors as ipywidgets and don't work on Colab or JupyterLab; in Jupyter notebooks instead is available and working - You can see an example in the image Visual Summary).
 The output will be:
 1. results_suite_NLP_Tests.csv summarizing the stats obtained through the tests;
