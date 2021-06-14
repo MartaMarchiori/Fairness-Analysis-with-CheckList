@@ -1,12 +1,5 @@
 # Fine-Grained Fairness Analysis ofAbusive Language Detection Systems with CheckList
 
-Reference: 
->[Beyond Accuracy: Behavioral Testing of NLP models with CheckList](http://homes.cs.washington.edu/~marcotcr/acl20_checklist.pdf)  
-> Marco Tulio Ribeiro, Tongshuang Wu, Carlos Guestrin, Sameer Singh
-> Association for Computational Linguistics (ACL), 2020
-
-> https://github.com/marcotcr/checklist
-
 This folder contains the project carried out during the internship at FBK, concerning the application of the tool CheckList (Ribeiro et al., 2020) in order to evaluate systems of Hate Speech detection, using representative datasets for this task, with a particular focus on fairness.  
 
 ### 1) Evaluation_Datasets, folder 
@@ -60,4 +53,7 @@ suite.summary()
 
 ```
 
+Publication: 
+
+> Marta Marchiori Manerba and Sara Tonelli. Fine-Grained Fairness Analysis ofAbusive Language Detection Systems with CheckListn, Workshop on Online Abuse and Harms (5th WOAH!), 2021
 
