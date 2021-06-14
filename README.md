@@ -53,7 +53,7 @@ suite.summary()
 
 ```
 
-Publication: 
+## Publication
 
 > Marta Marchiori Manerba and Sara Tonelli. Fine-Grained Fairness Analysis ofAbusive Language Detection Systems with CheckListn, Workshop on Online Abuse and Harms (5th WOAH!), 2021
 
