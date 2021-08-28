@@ -59,10 +59,10 @@ suite.summary()
 
 Bibtex for citations:
 
-```@inproceedings{manerba-tonelli-2021-fine,
+```
+    @inproceedings{manerba-tonelli-2021-fine,
     title = "Fine-Grained Fairness Analysis of Abusive Language Detection Systems with {C}heck{L}ist",
-    author = "Manerba, Marta Marchiori  and
-      Tonelli, Sara",
+    author = "Manerba, Marta Marchiori  and Tonelli, Sara",
     booktitle = "Proceedings of the 5th Workshop on Online Abuse and Harms (WOAH 2021)",
     month = aug,
     year = "2021",
@@ -70,5 +70,5 @@ Bibtex for citations:
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2021.woah-1.9",
     doi = "10.18653/v1/2021.woah-1.9",
-    pages = "81--91",
-}```
+    pages = "81--91",}
+```
