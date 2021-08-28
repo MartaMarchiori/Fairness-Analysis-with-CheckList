@@ -20,10 +20,6 @@ Bibtex for citations:
     pages = "81--91",}
 ```
 
-## Index
-***[Evaluation_Datasets](#Evaluation_Datasets)***<br>
-
-
 ### Evaluation_Datasets 
 These synthetic datasets concerns the Hate Speech Detection task. The data are in English and are divided in three categories, dealing with bias towards different targets. For each of the category, one dataset is created through the Jupiter notebook called "1_NLP Tests with CheckList + Creating Synthetic Dataset.ipynb".
 - sexism.csv for misogyny, gender, sexual orientation
@@ -48,7 +44,7 @@ The output will be:
 
 ### Prediction file example
 
-## TO RUN THE SUITE AND TEST YOUR OWN MODEL:
+#### TO RUN THE SUITE AND TEST YOUR OWN MODEL:
 Compute the predictions for NLP_Tests.txt file, saving them in a file where each line has 4 numbers: the prediction (0 for hateful, 1 for neutral, 2 for non-hateful) and the prediction probabilities for (negative, neutral, positive). Since the task of Hate-Speech Detection doesn't compute the neutral label, you can put in the neutral probability always 0 (the tests created do not include the neutral label, for the same reason).
 
 Then, in the Tests' Executions notebook, update the pred_path with this file and run all.
