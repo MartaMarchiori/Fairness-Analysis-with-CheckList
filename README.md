@@ -52,7 +52,8 @@ Then, in the Tests' Executions notebook, update the pred_path with this file and
 Take a look at the folder "Prediction file example" where you can find the notebook "Using_BERT_as_Hate_Speech_Classifier.ipynb", that produce the output ("output_NLP_Tests") in the format needed.  
 
 #### EXAMPLE: 
-```suite_path = '*insert the path of the suite NLP_Tests.pkl*'
+```python
+suite_path = '*insert the path of the suite NLP_Tests.pkl*'
 
 suite = TestSuite.from_file(suite_path)
 
