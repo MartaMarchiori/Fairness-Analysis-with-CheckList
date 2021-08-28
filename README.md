@@ -1,6 +1,26 @@
 # Fine-Grained Fairness Analysis ofAbusive Language Detection Systems with CheckList
 
-This folder contains the project carried out during the internship at FBK, concerning the application of the tool CheckList (Ribeiro et al., 2020) in order to evaluate systems of Hate Speech detection, using representative datasets for this task, with a particular focus on fairness.  
+This folder contains the project carried out during the internship at FBK, concerning the application of the tool CheckList (https://github.com/marcotcr/checklist, Ribeiro et al., 2020) in order to evaluate systems of Hate Speech detection, using representative datasets for this task, with a particular focus on fairness.  
+
+> Marta Marchiori Manerba and Sara Tonelli. Fine-Grained Fairness Analysis ofAbusive Language Detection Systems with CheckListn, Workshop on Online Abuse and Harms (5th WOAH!), 2021
+
+https://aclanthology.org/2021.woah-1.9/
+
+Bibtex for citations:
+
+```
+    @inproceedings{manerba-tonelli-2021-fine,
+    title = "Fine-Grained Fairness Analysis of Abusive Language Detection Systems with {C}heck{L}ist",
+    author = "Manerba, Marta Marchiori  and Tonelli, Sara",
+    booktitle = "Proceedings of the 5th Workshop on Online Abuse and Harms (WOAH 2021)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.woah-1.9",
+    doi = "10.18653/v1/2021.woah-1.9",
+    pages = "81--91",}
+```
 
 ### 1) Evaluation_Datasets, folder 
 These synthetic datasets concerns the Hate Speech Detection task. The data are in English and are divided in three categories, dealing with bias towards different targets. For each of the category, one dataset is created through the Jupiter notebook called "1_NLP Tests with CheckList + Creating Synthetic Dataset.ipynb".
@@ -51,24 +71,4 @@ suite.run_from_file(pred_path, overwrite=True)
 
 suite.summary()
 
-```
-
-## Publication
-
-> Marta Marchiori Manerba and Sara Tonelli. Fine-Grained Fairness Analysis ofAbusive Language Detection Systems with CheckListn, Workshop on Online Abuse and Harms (5th WOAH!), 2021
-
-Bibtex for citations:
-
-```
-    @inproceedings{manerba-tonelli-2021-fine,
-    title = "Fine-Grained Fairness Analysis of Abusive Language Detection Systems with {C}heck{L}ist",
-    author = "Manerba, Marta Marchiori  and Tonelli, Sara",
-    booktitle = "Proceedings of the 5th Workshop on Online Abuse and Harms (WOAH 2021)",
-    month = aug,
-    year = "2021",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.woah-1.9",
-    doi = "10.18653/v1/2021.woah-1.9",
-    pages = "81--91",}
 ```
