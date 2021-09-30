@@ -1,4 +1,4 @@
-# Fine-Grained Fairness Analysis ofAbusive Language Detection Systems with CheckList
+# Fine-Grained Fairness Analysis of Abusive Language Detection Systems with CheckList
 
 This folder contains the project carried out during the internship at FBK, concerning the application of the tool [CheckList](https://github.com/marcotcr/checklist) (Ribeiro et al., 2020) in order to evaluate systems of Hate Speech detection, using representative datasets for this task, with a particular focus on fairness.  
 
